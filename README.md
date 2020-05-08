@@ -82,18 +82,3 @@ The goal is to see how multiprocessing compares in speed to multithreading. See 
 In particular, see how the time differs as the number of files and/or directories increase. For instance, collect timing information for both programs with a single directory and 1, 2, 4, 8, 16, 32, 64, 128 and 256 files. Plot the time taken vs number of files to see if there is a definite trend for both programs.
 
 It would be a good idea to run each test multiple times and average the results. Other users, the speed of the hard drives, the OS scheduler, the difficulty in sorting the files, and any number of other factors may alter your results. It would be a very good idea to automate as much as you can. You may want to write some simple code to automatically create N files to be sorted, to run your code and collect the time results. It may sound like unnecessary extra work, but running everything manually by hand will likely take much more time than automating it. Let the machine do the boring work. Welcome to Computational Science!
-
-
-
-Results
-
-Submit your "multiThreadSorter_thread.c", "multiThreadSorter_thread.h" and "mergesort.c" as well as any other source files your header file references.
-
-Document your design, assumptions, difficulties you had and testing procedure. Include any test CSV files you used in your documentation. Be sure to also include a short description of how to use your code. Look at the man pages for suggestions on format and content. Do not neglect your header file. Be sure to describe the contents of it and why you needed them.
-
-Include a file called analysis.pdf that describes your findings from executing the time utility. Discuss why the results are the way they are. Be sure to answer the following questions:
-
-                                Is the comparison between run times a fair one? Why or why not?
-                                What are some reasons for the discrepancies of the times or for lack of discrepancies?
-                                If there are differences, is it possible to make the slower one faster? How? If there were no differences, is it possible to make one faster than the other? How?
-                                Is mergesort the right option for a multithreaded sorting program? Why or why not?
